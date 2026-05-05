@@ -1,12 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(npm create *)",
-      "Bash(npm install *)",
-      "mcp__Claude_in_Chrome__tabs_context_mcp",
-      "PowerShell(Get-ChildItem -Path \"D:\\\\workspace\\\\reactRuroReminder\\\\src\" -Recurse | ForEach-Object { $_.FullName })",
-      "mcp__Claude_in_Chrome__list_connected_browsers",
-      "PowerShell(Invoke-RestMethod -Uri \"http://localhost:8033/api/lists\" -Method POST -ContentType \"application/json\" -Body '{\"name\":\"����\",\"color\":\"#3b82f6\"}')"
-    ]
+    "allow": []
   }
 }
