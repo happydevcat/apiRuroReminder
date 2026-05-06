@@ -38,3 +38,5 @@ out/
 
 ### Claude Code ###
 .claude/
+CLAUDE.md
+task.md
