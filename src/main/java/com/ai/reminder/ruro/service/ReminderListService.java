@@ -29,7 +29,8 @@ public class ReminderListService {
 
     /** 특정 ID의 리마인더 리스트와 포함된 리마인더 목록을 상세 조회합니다. */
     public ReminderListDetailResponse getListById(Long id) {
-        ReminderList list = findOrThrow(id);
+        ReminderList list = reminderListRepository.findByIdWithReminders(id)
+                .orElseThrow(() -> new ResourceNotFoundException("ReminderList", id));
         List<ReminderResponse> reminders = list.getReminders().stream()
                 .map(r -> ReminderResponse.builder()
                         .id(r.getId())
